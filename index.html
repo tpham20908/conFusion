@@ -242,6 +242,11 @@
 					<a class="carousel-control-next" href="#mycarousel" role="button" data-slide="next">
 						<span class="carousel-control-next-icon"></span>
 					</a>
+
+					<div class="btn-group" id="carouselBtns">
+						<button type="button" class="btn btn-danger" id="pause-btn"><i class="fa fa-pause"></i></button>
+						<button type="button" class="btn btn-success" id="play-btn"><i class="fa fa-play"></i></button>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -304,8 +309,6 @@
 
 			</div>
 		</div>
-
-
 	</div>
 
 	<footer class="footer">
@@ -366,10 +369,17 @@
 	<script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
 	<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
 	<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-	<script>
+	<!-- <script>
 		$(document).ready(function () {
 			$("[data-toggle=\"reservation-tooltip\"]").tooltip();
 		});
+	</script> -->
+	<script>
+		$(document).ready(function() {
+			$("#mycarousel").carousel({ interval: 2000 });
+			$("#pause-btn").click(() => $("#mycarousel").carousel("pause"));
+			$("#play-btn").click(() => $("#mycarousel").carousel("cycle"));
+		})
 	</script>
 </body>
 

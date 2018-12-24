@@ -68,3 +68,9 @@ height: 300px;
   left: 0;
   min-height: 300px;
 }
+
+#carouselBtns {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
