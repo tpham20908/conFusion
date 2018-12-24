@@ -39,3 +39,17 @@ body {
   border-top: none;
   padding: 10px;
 }
+
+.card {
+  margin-bottom: 6px;
+}
+
+.card-header {
+  transition: .3s;
+}
+
+.card-header:hover {
+  cursor: pointer;
+  background-color: #7595CDBB;
+  color: #FFF;
+}
