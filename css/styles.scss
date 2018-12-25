@@ -69,3 +69,15 @@ body {
   right: 0;
   bottom: 0;
 }
+
+.modal-header {
+  background: $background-light;
+  color: floralwhite;
+  .close {
+    color: floralwhite;
+  }
+}
+
+.modal-body {
+  background: #8DF5CD22;
+}

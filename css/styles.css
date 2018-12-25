@@ -49,3 +49,12 @@ body {
   position: absolute;
   right: 0;
   bottom: 0; }
+
+.modal-header {
+  background: #9572CF;
+  color: floralwhite; }
+  .modal-header .close {
+    color: floralwhite; }
+
+.modal-body {
+  background: #8DF5CD22; }
