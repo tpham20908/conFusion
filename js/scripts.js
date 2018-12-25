@@ -4,7 +4,7 @@
 
 $(document).ready(function () {
   $("#mycarousel").carousel({ interval: 2000 });
-  $("#carouselBtn").click(() => {
+  $("#carouselBtn").click(function() {
     if ($("#carouselBtn").children("i").hasClass("fa-pause")) {
       $("#carouselBtn").children("i").removeClass("fa-pause");
       $("#carouselBtn").children("i").addClass("fa-play");
